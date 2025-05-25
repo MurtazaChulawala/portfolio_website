@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<meta name="description" content="Murtaza Chulawala - Robotics Engineer specializing in ROS 2, Embedded Systems, and Automation.">
+<meta name="keywords" content="Murtaza Chulawala, Robotics, ROS 2, Arduino, Mechatronics, Embedded Systems, Automation, Portfolio">
+<html lang="en">
+<head>
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murtaza Chulawala | Robotics Engineer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+  }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; }
+    .navbar { background-color: #1e1e1e;   
+    transition: top 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;}
+    .navbar a { color: white !important; }
+    .navbar a:hover { text-decoration: underline; }
+    .hero-img { width: 150px; border-radius: 50%; border: 3px solid #ccc; }
+    section { padding: 4rem 1rem; }
+    .bg-lightgray { background-color: #f9f9f9; }
+    .project-card { border: 1px solid #ccc; border-radius: 10px; padding: 1rem; background-color: #fff; }
+    footer { background: #1e1e1e; color: white; padding: 2rem 0; text-align: center; }
+    .contact-icons i { font-size: 2rem; margin-bottom: 0.5rem; }
+  /* Remove underline and add smooth hover effect */
+  
+  .navbar-nav .nav-link {
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.2);
+    font-style:italic;
+    font-weight: 800;
+    color: #ffffff !important;  /* Slightly brighter text on hover */
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 240px;
+    border-radius: 30%;
+    object-fit: cover;
+  }
+  
+
+  .gradient-ring {
+    padding: 8px;
+    border-radius: 30%;
+    background: linear-gradient(270deg, #71dea4, #375e91);
+    display: inline-block;
+    }
+.skills-section {
+  position: relative;
+  padding: 50px 2rem;
+  background-color: #071731;
+  overflow: hidden;
+  color: #fff;
+}
+
+.skills-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: 
+    repeating-linear-gradient(-10deg, rgba(255,255,255,0.03) , 2px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.03) , 2px, transparent 1px, transparent 20px);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  z-index: 1;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-pill {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.4rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  backdrop-filter: blur(4px);
+  cursor: default;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-pill:hover {
+  background: linear-gradient(to right, #375e91, #5ab3a7); /* simple solid color on hover */
+  transform: scale(1.05);
+}
+
+/* --- Projects Section Background with Grid Texture --- */
+#projects {
+  background-color: #071731;
+  /* #1a695f */
+  background-size: auto;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+
+/* --- Abstract blue shape overlays (stronger, less blur) --- */
+#projects::before,
+#projects::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(134, 194, 255, 0.05) 30%, #5ab3A7 50%);
+  z-index: 0;
+  pointer-events: none;
+  filter: none;
+}
+
+#projects::before {
+  width: 220px;
+  height: 120px;
+  border-radius: 60px;
+  top: 0px;
+  left: -100px;
+}
+
+#projects::after {
+  width: 140px;
+  height: 220px;
+  border-radius: 100px;
+  bottom: 0%;
+  right: 0px;
+}
+
+/* Keep your project content above background */
+#projects .container {
+  position: relative;
+  z-index: 2;
+}
+
+.project-card {
+  background-color:#d9fff9;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-btn {
+  background: linear-gradient(to right, #375e91, #152132); /* Teal to blue gradient */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.contact-section {
+  background: linear-gradient(to bottom, #d9fff9, #ffffff);
+  padding: 40px 0;
+}
+
+.icon-link img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  filter: invert(28%) sepia(61%) saturate(624%) hue-rotate(130deg) brightness(88%) contrast(95%);
+  transition: transform 0.3s ease;
+}
+
+.icon-link:hover img {
+  transform: scale(1.2);
+}
+
+.footer-section {
+  background: linear-gradient(90deg, #2e413e, #000000); /* similar to your navbar */
+  color: #fff;
+}
+
+.footer-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-icons a {
+  margin-left: 20px;
+}
+
+.footer-icon-black {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icon-black:hover {
+  transform: scale(1.1);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #d4fff8;
+  color: #000;
+  padding: 30px;
+  border-radius: 8px;
+  max-height: 90vh;         /* Limit height */
+  overflow-y: auto;         /* Enable scroll inside modal */
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+  .modal-content img, .modal-content video {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .modal-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .modal-content a:hover {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow" style="background: linear-gradient(270deg, #5ab3a7, #101d2e);">
+    <div class="container">
+      <h2 style="padding-top: 12px" class="navbar-brand text-white fw-bold">Murtaza Chulawala</h2>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#intro">Intro</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- linear-gradient(to bottom, #152935, #071731) -->
+<!-- Intro Section -->    
+  <section id="intro" style="background: linear-gradient(to bottom, #1a3b36, #071731); padding-top:120px; text-align:center ;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+      <div class="gradient-ring" style="text-align: center;">
+        <img src="./professional formal photo navy blue.jpg" alt="Profile Photo" class="profile-img">
+    </div>
+  <p></p>
+    <h1 style="color:#8fc0ff; font-style: italic;font-size:3rem;">Hi, I'm Murtaza Chulawala</h1>
+    <p style="font-size:1.3rem; max-width:800px; margin:auto; color:#a6f8ed; padding-top: 25px">
+      Full Stack Robotics Engineer | Turning ideas into autonomous systems that can sense, think, move, and adapt by bridging Mechanical Design, Embedded System and Artificial Intelligence. 
+    </p>
+  </section>
+  
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="skills-overlay"></div>
+  <div class="container">
+    <h2 class="section-title" style="font-style:oblique">Skills</h2>
+    <div class="skills-container">
+      <span class="skill-pill">ROS 2</span>
+      <span class="skill-pill">Arduino</span>
+      <span class="skill-pill">Python</span>
+      <span class="skill-pill">Robotics</span>
+      <span class="skill-pill">ANSYS</span>
+      <span class="skill-pill">Fusion 360</span>
+      <span class="skill-pill">Mechatronics</span>
+      <span class="skill-pill">Mechanical Design</span>
+      <span class="skill-pill">Embedded Systems</span>
+      <span class="skill-pill">Industrial Automation</span>
+      <span class="skill-pill">Control Systems</span>
+      <span class="skill-pill">Sensor Integration</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h1 class="text-center mb-5" style="color:white; font-style: oblique">Projects</h1>
+    <div class="row g-4">
+      
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Design of 12ft Wall Painting and Finishing Robot</h4>
+          <p>6 axis robotic arm sitting atop of telescopic lift which is mounted on mobile robot that automates wall painting and putty finishing tasks up to 12 feet high and 4ft wide.</p>
+          <button class="project-btn" onclick="openCard(
+  'Conceptual Design of 12ft wall finishing robot',
+  'Labour shortage, increased time, inconsistent surface finish, and safety hazards due to working at height.',
+  'Developed a mast-lift mounted, mobile robotic platform integrated with a 6-axis FANUC arm to automate wall finishing tasks such as sanding, scrubbing, and painting up to 12 feet high. The system ensures precision, repeatability, and significantly reduces human effort and risk.',
+  null,
+  `<iframe src='./12ft_robo_design_report.pdf' type='application/pdf' width='100%' height='500px' style='border: none;'></iframe>`,
+)">Click to know more</button>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Design of Solar Panel Autonomous Robotic cleaner</h4>
+          <p>An autonomous mobile robot (AMR) for efficient solar panel cleaning without water usage and fallover from panel edges avoiding system using ultrasonic sensor.</p>
+          <button class="project-btn" onclick="openCard(
+  'Design of Solar Panel Autonomous Robotic cleaner',
+  'The efficiency of solar panel reduces by 30% when not cleaned also around 10 billion gallons of water is used per year just for solar panel cleaning.',
+  'Thus we proposed an autonomous robot that could drive itself around on the solar panel cleaning it with the brushes in the front and rear side and featuring an ultrasonic sensor based control system to detect the edge of the panel and make the turn, thus avoiding falling off the panel. Also the system is completely waterless saving water as well.',
+  null,
+  `<image src='./solar_panel_cleaning_robot.png' alt='solar panel cleaning robot image'></image>
+  <image src='./solar_panel_cleaning_robo_circuit.png' alt='solar panel cleaning robot circuit diagram'></image>
+  <video controls autoplay muted playsinline style='max-width:100%; border-radius:8px;'>
+     <source src='./solar_panel_cleaning_robot_vid.mp4' type='video/mp4'>
+     Your browser does not support the video tag.
+   </video>`
+)">Click to know more</button>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Paper Gluing Line Automation Using SCARA Robot and camera</h4>
+          <p>Programmed Epson T3 SCARA robot for precise placement of case/box over the glued paper using the co-ordiantes received from the camera.</p>
+                    <button class="project-btn" onclick="openCard(
+  'Gluing line automation with the help of SCARA robot and camera',
+  'Gluing line is an important part of box and case making its where the process begins from the application of glue on the paper but most of the places the board or boxes are manually placed which introduces accuracy related issues and slows down the production rate.',
+  'We came up with the solution of retrofitting this gluing lines with a robotics arm to enhanced its production rate and not only this also we added a camera to allow the robot to always do the placement accurately regardless of the paper skew. My role in this project was to program the robot such that it accepts the co-ordinates from the camera using tcp protocol and use that co-ordinate to drive the placement. Also the caliberation and model training for the camera was done by me for co-ordinate generation.',
+  null,
+  ``
+)">Click to know more</button>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Arduino-Based Conveyor Stopping Control System</h4>
+          <p>Used encoder feedback and distance-time logic to precisely stop a conveyor using Arduino uno and 24v relay to send the stopping signal directly to VFD.</p>
+          <button class="project-btn" onclick="openCard(
+  'Arduino-Based Conveyor Stopping Control System',
+  'Conveyor stopping or such kind of task in industry has always demanded plc for logic based operation but its an expensive and time consuming process since the ladder logic development requires a skilled engineer.',
+  'I decided to skip the expensive PLC and use Arduino Uno with C++ like syntax to do the logic part, it made the project easier quicker and economical. I used 24v ir sensor, 24v encoder to get the rpm of the conveyor stepped them down using buck converter and then fed them to arduino for logic processing once the output was calculated about where to stop the conveyor i used a 5v-24v dc relay to use arduino output and send a 24v stop signal to vfd to stop the conveyor.',
+  null,
+  ``
+)">Click to know more</button>
+</div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Design and fabrication of air whipped based duct cleaning robot</h4>
+          <p>A remote controlled robot cleaning the duct with pressurized air and provide visual feed to aid in directional control</p>
+          <button class="project-btn" onclick="openCard(
+  'Design of Duct cleaning robot',
+  'Ducts are a difficult place for humans to get in and clean them also its a time consuming process',
+  'To solve this issue i came up with a mobile robotic system which could get inside the duct and clean them with the pressurized air. This robot is controlled manually from outside the duct using a joystick and the robot is fitted with a camera and light to give you direct feed from inside so you can easily manipulate and drive the robot.',
+  null,
+  `<video controls autoplay muted playsinline style='max-width:100%; border-radius:8px;'>
+     <source src='./duct%20cleaning%20robo%202.mp4' type='video/mp4'>
+     Your browser does not support the video tag.
+   </video> 
+  <video controls autoplay muted playsinline style='max-width:100%; border-radius:8px;'>
+     <source src='./duct-cleaning-robo-1.mp4' type='video/mp4'>
+     Your browser does not support the video tag.
+   </video>`,
+)">Click to know more</button>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="project-card">
+          <h4>Ultrasonic Sensor Data Visualization in RViz2 via ROS 2</h4>
+          <p>Live spatial visualization of Arduino-driven ultrasonic sensor data inside ROS 2 using RViz2.</p>
+          <button class="project-btn" onclick="openCard(
+  'Ultrasonic sensor data visualization in Rviz2 using ROS 2',
+  'Visualization of sensor data is useful in developing the navigation logic and ros2 had a tool to do it but arduino being a microcontroller could not handle ros2 but only microROS in only some boards.',
+  'I had arduino Uno from my previous project and started with ros2 so i directly got this project where i started with ultrasonic sensor interfacing with arduino uno and sending the readings. I then started sending these readings over serial communication i.e. to the laptop using ros2 node which was tasked at pulling the data from the serial port and then publishing it over to the sensorData topic. This sensorData topic was then subscribed by another node which was programmed to use this values and publish it to rviz2 for visualization. Finally in Rviz2 we subscribe to new topic where visualization values are coming and we can see the wall like structure appearing at distance from the center that the ultrasonic sensor is sensing.',
+  [['Github','https://github.com/MurtazaChulawala/Sensor_data_visualization_rviz2']],
+  `<image src='./sensorData_visualization_ros2.png' alt='circuit diagram'></image>
+  <image src='./terminal_screenshot.png' alt='terminal screenshot'></image>
+  <image src='./rviz2_window.png' alt='rviz2 window'></image>`
+)">Click to know more</button>        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL STRUCTURE -->
+<div id="expandedCard" class="modal-overlay" style="display: none;">
+  <div class="modal-content">
+  <span class="close-btn" onclick="closeCard()">×</span>
+    <h3 style="text-align: center;padding-bottom: 10px;" id="projectTitle"></h3>
+    <p style="font-size: 18px;"><strong>Problem:</strong> <span id="projectProblem"></span></p>
+    <p style="font-size: 18px;"><strong>Solution:</strong> <span id="projectSolution"></span></p>
+
+    <div id="proofWrapper">
+      <p style="font-size: 18px;"><strong>Resource link: </strong> <span id="projectProof"></span></p>
+    </div>
+
+    <div id="mediaWrapper" style="margin-top: 15px;">
+      <div id="projectMedia"></div>
+    </div>
+  </div>
+</div>
+
+<!-- contact me section -->
+<section id="contact" class="contact-section">
+  <div class="container text-center">
+    <h1 style="padding-bottom: 15px;font-style: oblique; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Me</h1>
+    <p style="color:#1a3b36;font-size: 20px; font-weight:bold ; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" class="mb-4">Let’s bring intelligent machines to life.</br>
+I’m open to collaborations and roles in robotics development — from mechanical design to autonomous systems and ROS 2 integration.</br> If you're building the next generation of robots, let’s connect.</br>
+Below you can click on the drive link to access my certificates and resume for reference.</p>
+    <div class="contact-icons d-flex justify-content-center flex-wrap gap-4">
+      <a href="mailto:murtazachulawala33977@gmail.com" class="icon-link" title="Email" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="Email Icon">
+      </a>
+      <a href="https://github.com/MurtazaChulawala/" class="icon-link" title="GitHub" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub Icon">
+      </a>
+      <a href="https://in.linkedin.com/in/murtaza-saifuddin-chulawala-1724751b5" class="icon-link" title="LinkedIn" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Icon">
+      </a>
+      <a href="https://www.youtube.com/channel/UCjOy0hpZjywer0uL7YfTk5A" class="icon-link" title="YouTube" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube Icon">
+      </a>
+      <a href="https://drive.google.com/drive/folders/1BBWrVH4L5zNpMt7CfvW3biqVQa7Hzgdx" class="icon-link" title="Drive" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googledrive.svg" alt="Drive Icon">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section py-3 px-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="footer-name mb-2 mb-md-0">
+      &copy; <span id="year"></span> Murtaza Chulawala
+    </div>
+    <div class="footer-icons">
+      <a href="mailto:murtazachulawala33977@gmail.com" class="icon-link" title="Email" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mail-dot-ru.svg" alt="Email Icon" class="footer-icon-black">
+      </a>
+      <a href="https://github.com/MurtazaChulawala/" class="icon-link" title="GitHub" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub Icon" class="footer-icon-black">
+      </a>
+      <a href="https://www.linkedin.com/in/murtaza-saifuddin-chulawala-1724751b5" class="icon-link" title="LinkedIn" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Icon" class="footer-icon-black">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script> last = 0;
+window.addEventListener('scroll', () => {
+  document.querySelector('.navbar').style.top = 
+    (this.scrollY > last) ? '-100px' : '0';
+  last = this.scrollY;
+});</script>
+
+<script>
+function openCard(title, problem, solution, proofLinks, mediaHtml) {
+  document.getElementById("projectTitle").innerText = title;
+  document.getElementById("projectProblem").innerText = problem;
+  document.getElementById("projectSolution").innerText = solution;
+
+  // Handle Proof Section
+  const proofContainer = document.getElementById("projectProof");
+  const proofWrapper = document.getElementById("proofWrapper");
+  proofContainer.innerHTML = "";
+
+  if (proofLinks && proofLinks.length > 0) {
+    proofWrapper.style.display = "block";
+    proofLinks.forEach(link => {
+      const a = document.createElement("a");
+      a.href = link[1];
+      a.target = "_blank";
+      a.innerText = link[0];
+      a.style.marginRight = "10px";
+      proofContainer.appendChild(a);
+    });
+  } else {
+    proofWrapper.style.display = "none";
+  }
+
+  // Handle Media Section
+  const mediaWrapper = document.getElementById("mediaWrapper");
+  const mediaContainer = document.getElementById("projectMedia");
+
+  if (mediaHtml && mediaHtml.trim() !== "") {
+    mediaWrapper.style.display = "block";
+    mediaContainer.innerHTML = mediaHtml;
+  } else {
+    mediaWrapper.style.display = "none";
+    mediaContainer.innerHTML = "";
+  }
+
+  document.getElementById("expandedCard").style.display = "flex";
+}
+function closeCard() {
+  document.getElementById("expandedCard").style.display = "none";
+}
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeCard();
+  }
+});
+
+</script>
+
+</body>
+</html>

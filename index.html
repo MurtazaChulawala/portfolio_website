@@ -3,7 +3,6 @@
 <meta name="keywords" content="Murtaza Chulawala, Robotics, ROS 2, Arduino, Mechatronics, Embedded Systems, Automation, Portfolio">
 <html lang="en">
 <head>
-    <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,8 +34,6 @@
     .project-card { border: 1px solid #ccc; border-radius: 10px; padding: 1rem; background-color: #fff; }
     footer { background: #1e1e1e; color: white; padding: 2rem 0; text-align: center; }
     .contact-icons i { font-size: 2rem; margin-bottom: 0.5rem; }
-  /* Remove underline and add smooth hover effect */
-  
   .navbar-nav .nav-link {
     text-decoration: none !important;
     transition: all 0.3s ease;
@@ -47,7 +44,7 @@
     transform: scale(1.2);
     font-style:italic;
     font-weight: 800;
-    color: #ffffff !important;  /* Slightly brighter text on hover */
+    color: #ffffff !important;  
   }
 
   .profile-img {
@@ -57,7 +54,6 @@
     object-fit: cover;
   }
   
-
   .gradient-ring {
     padding: 8px;
     border-radius: 30%;
@@ -118,11 +114,10 @@
 }
 
 .skill-pill:hover {
-  background: linear-gradient(to right, #375e91, #5ab3a7); /* simple solid color on hover */
+  background: linear-gradient(to right, #375e91, #5ab3a7); 
   transform: scale(1.05);
 }
 
-/* --- Projects Section Background with Grid Texture --- */
 #projects {
   background-color: #071731;
   /* #1a695f */
@@ -133,7 +128,6 @@
   z-index: 1;
 }
 
-/* --- Abstract blue shape overlays (stronger, less blur) --- */
 #projects::before,
 #projects::after {
   content: "";
@@ -160,7 +154,6 @@
   right: 0px;
 }
 
-/* Keep your project content above background */
 #projects .container {
   position: relative;
   z-index: 2;
@@ -175,7 +168,7 @@
 }
 
 .project-btn {
-  background: linear-gradient(to right, #375e91, #152132); /* Teal to blue gradient */
+  background: linear-gradient(to right, #375e91, #152132);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -212,7 +205,7 @@
 }
 
 .footer-section {
-  background: linear-gradient(90deg, #2e413e, #000000); /* similar to your navbar */
+  background: linear-gradient(90deg, #2e413e, #000000); 
   color: #fff;
 }
 
@@ -254,8 +247,8 @@
   color: #000;
   padding: 30px;
   border-radius: 8px;
-  max-height: 90vh;         /* Limit height */
-  overflow-y: auto;         /* Enable scroll inside modal */
+  max-height: 90vh;         
+  overflow-y: auto;         
   width: 100%;
   max-width: 600px;
   position: relative;
@@ -549,8 +542,6 @@ function openCard(title, problem, solution, proofLinks, mediaHtml) {
   } else {
     proofWrapper.style.display = "none";
   }
-
-  // Handle Media Section
   const mediaWrapper = document.getElementById("mediaWrapper");
   const mediaContainer = document.getElementById("projectMedia");
 

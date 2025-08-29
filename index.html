@@ -386,20 +386,6 @@
 )">Click to know more</button>
         </div>
       </div>
-      
-      <div class="col-md-6">
-        <div class="project-card">
-          <h4>Arduino-Based Conveyor Stopping Control System</h4>
-          <p>Used encoder feedback and distance-time logic to precisely stop a conveyor using Arduino uno and 24v relay to send the stopping signal directly to VFD.</p>
-          <button class="project-btn" onclick="openCard(
-  'Arduino-Based Conveyor Stopping Control System',
-  'Conveyor stopping or such kind of task in industry has always demanded plc for logic based operation but its an expensive and time consuming process since the ladder logic development requires a skilled engineer.',
-  'I decided to skip the expensive PLC and use Arduino Uno with C++ like syntax to do the logic part, it made the project easier quicker and economical. I used 24v ir sensor, 24v encoder to get the rpm of the conveyor stepped them down using buck converter and then fed them to arduino for logic processing once the output was calculated about where to stop the conveyor i used a 5v-24v dc relay to use arduino output and send a 24v stop signal to vfd to stop the conveyor.',
-  null,
-  ``
-)">Click to know more</button>
-</div>
-      </div>
 
       <div class="col-md-6">
         <div class="project-card">
@@ -439,13 +425,13 @@
 
   <div class="col-md-6">
     <div class="project-card">
-        <h4>Controlling Turtlesim using ROS2 and Gamepad</h4>
-        <p>Using gamepad to communicate with the robot and teleoperate it using ros2 and inbuilt ros2 joy node.</p>
+        <h4>Joystick Controlled and Obstacle Avoidance Robot Simulation</h4>
+        <p>Simulated mobile robot in ROS 2 with obstacle avoidance, joystick control, and modular design in Gazebo.</p>
         <button class="project-btn" onclick="openCard(
-          'Controlling Turtlesim using ROS2 and X-box Gamepad',
-          'Controlling the robot is an important aspect and with the help of gaming pad why not take its advantage to simplify the robots control and motion, but the bridge to connect a plug n play controller with the robot microcontroller is not an easy task.',
-          'This project demonstrates real-time robot control using a joystick game controller in a ROS 2 environment. Built around the popular TurtleSim simulator, the system establishes a direct interface between a physical Xbox-style game controller and a simulated turtle robot, enabling smooth teleoperation without relying on any sensors or automation algorithms. To learn more about this project watch the video below.',
-  [['Github','https://github.com/MurtazaChulawala/ros2-based-joystick-controll']],
+          'Joystick Controlled and Obstacle Avoidance Robot Simulation',
+          'Robots simulated in Gazebo often remain disconnected from real-world hardware, lacking safety features and practical integration with sensors and control methods. This creates a gap between academic simulations and deployable robotic systems.',
+          'This project extends a basic ROS 2 Gazebo mobile robot into a complete AMR system by integrating joystick teleoperation, real sensor feedback from an Arduino-powered ultrasonic module, and a safety fallback mechanism that automatically prevents collisions. It demonstrates how simulation, teleoperation, and hardware can be combined into one modular robotics workspace.',
+  [['Github','https://github.com/MurtazaChulawala/joystick-control-and-obstacle-avoidance-robot.git']],
   `<iframe width='100%' height='350' src='https://www.youtube.com/embed/ihq3QK5tJ48?autoplay=1&mute=1'></iframe>`
 )">Click to know more</button>        </div>
       </div>
@@ -567,3 +553,4 @@ document.addEventListener("keydown", function (event) {
 
 </body>
 </html>
+

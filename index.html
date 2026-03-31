@@ -410,13 +410,13 @@
       
       <div class="col-md-6">
         <div class="project-card">
-          <h4>Ultrasonic Sensor Data Visualization in RViz2 via ROS 2</h4>
-          <p>Live spatial visualization of Arduino-driven ultrasonic sensor data inside ROS 2 using RViz2.</p>
+          <h4>Integrated Vision-Based Perception & Offboard Teleoperation for Autonomous Drone System</h4>
+          <p>A simulated autonomous drone which can be teleoperated with joystick and lands autonomously.</p>
           <button class="project-btn" onclick="openCard(
-  'Ultrasonic sensor data visualization in Rviz2 using ROS 2',
-  'Visualization of sensor data is useful in developing the navigation logic and ros2 had a tool to do it but arduino being a microcontroller could not handle ros2 but only microROS in only some boards.',
-  'I had arduino Uno from my previous project and started with ros2 so i directly got this project where i started with ultrasonic sensor interfacing with arduino uno and sending the readings. I then started sending these readings over serial communication i.e. to the laptop using ros2 node which was tasked at pulling the data from the serial port and then publishing it over to the sensorData topic. This sensorData topic was then subscribed by another node which was programmed to use this values and publish it to rviz2 for visualization. Finally in Rviz2 we subscribe to new topic where visualization values are coming and we can see the wall like structure appearing at distance from the center that the ultrasonic sensor is sensing.',
-  [['Github','https://github.com/MurtazaChulawala/Sensor_data_visualization_rviz2']],
+  'ROS 2 Jazzy + PX4: Integrated Vision-Based Perception & Offboard Teleoperation for Autonomous Drone System',
+  'Integrating high-level ROS 2 vision with low-level PX4 flight control often results in high communication latency and integration gaps within modern simulation environments. These bottlenecks hinder real-time autonomous tasks like precise target tracking and landing in Gazebo-Jazzy stacks.',
+  'This project was aimed at providing a high-performance, modular ROS 2 Jazzy and PX4 integration using a low-latency Micro XRCE-DDS pipeline. By combining an OpenCV-based ArUco perception system for autonomous landing with a custom teleoperation bridge, it enables seamless, real-time UAV mission execution and precision landing.',
+  [['Github','https://github.com/MurtazaChulawala/Drone_sim_ws']],
 `<iframe width='100%' height='350' src='https://drive.google.com/file/d/1UFLQUAz01PPbgx-JZwYn7-_uImjX5FAx/preview?usp=sharing' allow='autoplay' frameborder='0'></iframe>`
     )">Click to know more</button>        </div>
       </div>
